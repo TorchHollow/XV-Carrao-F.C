@@ -1,0 +1,11 @@
+:root{
+    --Cor-Principal: #327cf2;
+    --Cor-Secundária: #05060c;
+    --Cor-Terciaria: #0b50c5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
