@@ -16,6 +16,8 @@ body {
     position: relative;
 }
 
+/*MenuBar*/
+
 .titulo {
     background: linear-gradient(to top, #05060c 0%, #05060c 50%, #327cf2 50%, #327cf2 100%);
     overflow: hidden;
@@ -44,7 +46,7 @@ body {
     display: none;
 }
 
-/*Mobile*/
+/*Mobile da MenuBar*/
 
 @media screen and (max-width: 719px) {
     .titulo img {
@@ -60,7 +62,7 @@ body {
         display: block;
     }
 
-    .titulo i{
+    .titulo i {
         font-size: 30px;
     }
 
@@ -81,5 +83,38 @@ body {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+/*Slideshow*/
+
+.sec-slide {
+    width: 100%;
+    height: auto;
+    background-color: var(--Cor-Terciaria)
+}
+
+.container-do-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.meuSlide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
     }
 }
