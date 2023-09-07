@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*MenuBar*/
@@ -34,7 +35,6 @@ body {
     padding: 14px 17px;
     text-decoration: none;
     font-size: 27px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo a:hover:not(:first-child) {
@@ -116,5 +116,63 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+
+/*Área da história do time*/
+
+.historia {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--Cor-Principal);
+}
+
+.historia h1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    width: 100%;
+}
+
+.column p {
+    max-width: 90%;
+    font-size: 25px;
+    background-color: var(--Cor-Terciaria);
+    padding: 10px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Mobile da area da história do time*/
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        padding: 0;
+    }
+
+    .column p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .column p {
+        font-size: 15px;
     }
 }
