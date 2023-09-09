@@ -176,3 +176,40 @@ body {
         font-size: 15px;
     }
 }
+
+/*Área dos futuros jogos*/
+
+.jogos{
+    width: 100%;
+    height: auto;
+    background-color: var(--Cor-Secundária)
+}
+
+.jogos h1{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.jogos img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.jogos p{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+/*Mobile da área dos futuros jogos*/
+
+@media screen and (max-width: 600px){
+    .jogos img{
+        width: 70%;
+    }
+}
