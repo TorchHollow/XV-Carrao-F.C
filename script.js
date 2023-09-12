@@ -28,7 +28,7 @@ function mostrarSlides() {
 
 /*Função do timer*/
 
-let contagemData = new Date("2023-09-09 15:37:25").getTime()
+let contagemData = new Date("2023-09-13 21:30:00").getTime()
 
 let contagemFinal = setInterval(function () {
 

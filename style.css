@@ -171,7 +171,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
     .column p {
         font-size: 15px;
     }
@@ -179,37 +179,94 @@ body {
 
 /*Área dos futuros jogos*/
 
-.jogos{
+.jogos {
     width: 100%;
     height: auto;
     background-color: var(--Cor-Secundária)
 }
 
-.jogos h1{
+.jogos h1 {
     text-align: center;
     color: #fff;
     font-size: 35px;
     padding: 20px 0;
 }
 
-.jogos img{
+.jogos img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-.jogos p{
-  text-align: center;
-  color: #fff;
-  font-size: 60px;
-  margin-top: 0px;
+.jogos p {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 0px;
 }
 
 /*Mobile da área dos futuros jogos*/
 
-@media screen and (max-width: 600px){
-    .jogos img{
+@media screen and (max-width: 600px) {
+    .jogos img {
         width: 70%;
     }
+}
+
+/*Área dos produtos*/
+
+.produtos {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--Cor-Terciaria);
+}
+
+.produtos h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.carta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.carta a {
+    text-decoration: none;
+    color: white;
+}
+
+.carta h1 {
+    text-align: unset;
+    font-size: unset;
+}
+
+.preco {
+    color: gray;
+    font-size: 22px;
+}
+
+.carta button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.carta button:hover{
+    opacity: 0.7;
 }
