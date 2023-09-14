@@ -296,3 +296,16 @@ button.prev, button.next {
   button.next {
     position: absolute; right: 0; top: 80px;
   }
+
+  .galeria{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 30px;
+    background-color: var(--Cor-Principal);
+  }
+
+  .galeria h1{
+    text-align: center;
+    font-size: 30px;
+  }
