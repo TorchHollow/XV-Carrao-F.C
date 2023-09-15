@@ -20,9 +20,24 @@ body {
 
 /*MenuBar*/
 
+.salve{
+    width: 100%;
+    height: auto;
+    background-color: var(--Cor-Terciaria);
+    text-align: center;
+    padding: 10px 10px;
+}
+
 .titulo {
     background: linear-gradient(to top, #05060c 0%, #05060c 50%, #327cf2 50%, #327cf2 100%);
     overflow: hidden;
+}
+
+.titulo p{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .titulo img {
