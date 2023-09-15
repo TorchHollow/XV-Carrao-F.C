@@ -244,6 +244,18 @@
 
     <section class="galeria">
         <h1>Galeria</h1>
+
+        <div class="imagem-cheia" id="imagemCheiaBox">
+            <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+            <span onclick="fecharImagemCheia()">X</span>
+        </div>
+
+        <div class="galeria-img">
+            <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+            <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+        </div>
     </section>
 
     <script src="./script.js"></script>
