@@ -54,10 +54,30 @@ let contagemFinal = setInterval(function () {
 
 let liEls = document.querySelectorAll('ul li')
 let index = 0
-window.show = function(increase){
+window.show = function (increase) {
     index = index + increase
-    index = Math.min(Math.max(index,0), liEls.length-1)
-    liEls[index].scrollIntoView({behavior: 'smooth'})
+    index = Math.min(Math.max(index, 0), liEls.length - 1)
+    liEls[index].scrollIntoView({ behavior: 'smooth' })
 }
+
+/*Função das Tabs*/
+
+function abrirAba(evt, nomeDaAba) {
+    let i, tabcontent, tablinks
+
+    tabcontent = document.getElementsByClassName("tabcontent")
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none"
+    }
+
+    tablinks = document.getElementsByClassName("tablinks")
+    for (i = 0; i < tablinks.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" ativo", "")
+    }
+
+    document.getElementById(nomeDaAba).style.display = "block"
+    evt.currentTarget.className += " ativo"
+}
+document.getElementById("defaultOpen").click()
 
 

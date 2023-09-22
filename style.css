@@ -68,8 +68,15 @@ body {
     color: black;
 }
 
+.titulo button.ativo{
+    background-color: var(--Cor-Terciaria);
+}
 
 .titulo .icon {
+    display: none;
+}
+
+.tabcontent{
     display: none;
 }
 
