@@ -60,6 +60,20 @@ window.show = function (increase) {
     liEls[index].scrollIntoView({ behavior: 'smooth' })
 }
 
+//Galeria de imagem
+
+let imagemCheiaBox = document.getElementById("imagemCheiaBox")
+let imagemCheia = document.getElementById("imagemCheia")
+
+function abrirImagemCheia(ima){
+  imagemCheiaBox.style.display = "flex"
+  imagemCheia.src = ima
+}
+
+function fecharImagemCheia(){
+  imagemCheiaBox.style.display = "none"
+}
+
 /*Função das Tabs*/
 
 function abrirAba(evt, nomeDaAba) {
