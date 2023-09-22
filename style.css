@@ -46,10 +46,27 @@ body {
     font-size: 27px;
 }
 
+.titulo button{
+    background-color: var(--Cor-Secundária);
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 27px;
+    border: none;
+}
+
 .titulo a:hover:not(:first-child) {
     background-color: var(--Cor-Terciaria);
     color: black;
 }
+
+.titulo button:hover {
+    background-color: var(--Cor-Terciaria);
+    color: black;
+}
+
 
 .titulo .icon {
     display: none;
