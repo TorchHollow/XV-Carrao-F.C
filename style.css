@@ -55,6 +55,7 @@ body {
     text-decoration: none;
     font-size: 27px;
     border: none;
+    cursor: pointer;
 }
 
 .titulo a:hover:not(:first-child) {
@@ -74,13 +75,21 @@ body {
 
 /*Mobile da MenuBar*/
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 820px) {
     .titulo img {
         width: 80px;
     }
 
     .titulo a:not(:first-child) {
         display: none;
+    }
+
+    .titulo button{
+        display: none;
+    }
+
+    .titulo .primeiro-botao{
+        background-color: var(--Cor-Principal);
     }
 
     .titulo a.icon {
@@ -94,7 +103,7 @@ body {
 
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 820px) {
     .titulo.responsive {
         position: relative;
     }
@@ -106,6 +115,12 @@ body {
     }
 
     .titulo.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .titulo.responsive button {
         float: none;
         display: block;
         text-align: left;

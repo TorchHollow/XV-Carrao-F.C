@@ -18,10 +18,11 @@
         <a href=""><img src="./Sources/logo 2.png">
             <p>Salve azul ⚫️🔵</p>
         </a>
+        <button class="tablinks primeiro-botao" onclick="abrirAba(event, 'Home')">Home</button>
         <button class="tablinks" onclick="abrirAba(event, 'Historia')">História</button>
-        <a href="#jogos">Jogos</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#galeria">Galeria</a>
+        <button class="tablinks" onclick="abrirAba(event, 'Jogos')">Jogos</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Produtos')">Produtos</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Galeria')">Galeria</button>
         <a href="javascript:void(0);" class="icon" onclick="descerMenu()">
             <i class="fa fa-bars"></i>
         </a>
@@ -50,215 +51,230 @@
 
     <!--História do time-->
 
-    <section class="historia">
-        <h1>História</h1>
+    <div id="Historia" class="tabcontent">
 
-        <div class="row">
-            <div class="column">
-                <img src="./Sources/fotoDoTime4.jpg" alt="">
+        <section class="historia">
+            <h1>História</h1>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./Sources/fotoDoTime4.jpg" alt="">
+                </div>
+                <div class="column">
+                    <p>Aliquam posuere vehicula arcu et suscipit. Sed convallis lorem metus, at accumsan justo pretium
+                        ac.
+                        Curabitur et magna ac mi porttitor lobortis vitae sed sapien. Vestibulum ac scelerisque quam, et
+                        consequat quam. Mauris ut augue sit amet tellus cursus tristique quis quis quam. Donec id
+                        pharetra
+                        dui, at dignissim arcu. Fusce in auctor eros. Pellentesque risus metus, congue consequat mollis
+                        ut,
+                        efficitur vitae metus. Ut et felis viverra, tincidunt diam eget, pretium ligula. Vivamus
+                        facilisis
+                        arcu at leo accumsan, quis hendrerit lacus dictum. Quisque lobortis et felis a volutpat.
+                        Pellentesque commodo ante quis purus ullamcorper tempor. Donec mauris quam, fringilla eu lectus
+                        non,
+                        pellentesque fringilla velit. Vestibulum in felis hendrerit nisi tempor congue. Quisque
+                        imperdiet
+                        sem lorem, sit amet lobortis metus iaculis at. </p>
+                </div>
             </div>
-            <div class="column">
-                <p>Aliquam posuere vehicula arcu et suscipit. Sed convallis lorem metus, at accumsan justo pretium ac.
-                    Curabitur et magna ac mi porttitor lobortis vitae sed sapien. Vestibulum ac scelerisque quam, et
-                    consequat quam. Mauris ut augue sit amet tellus cursus tristique quis quis quam. Donec id pharetra
-                    dui, at dignissim arcu. Fusce in auctor eros. Pellentesque risus metus, congue consequat mollis ut,
-                    efficitur vitae metus. Ut et felis viverra, tincidunt diam eget, pretium ligula. Vivamus facilisis
-                    arcu at leo accumsan, quis hendrerit lacus dictum. Quisque lobortis et felis a volutpat.
-                    Pellentesque commodo ante quis purus ullamcorper tempor. Donec mauris quam, fringilla eu lectus non,
-                    pellentesque fringilla velit. Vestibulum in felis hendrerit nisi tempor congue. Quisque imperdiet
-                    sem lorem, sit amet lobortis metus iaculis at. </p>
-            </div>
-        </div>
-    </section>
+        </section>
+
+    </div>
 
     <!--Jogos futuros-->
 
-    <section class="jogos">
-        <h1>Futuro jogos</h1>
+    <div id="Jogos" class="tabcontent">
+        <section class="jogos">
+            <h1>Futuro jogos</h1>
 
-        <img src="./Sources/jogo5.jpg">
+            <img src="./Sources/jogo5.jpg">
 
-        <p id="timer"></p>
+            <p id="timer"></p>
 
-    </section>
-
+        </section>
+    </div>
     <!--Produtos do time-->
 
-    <section class="produtos">
+    <div id="Produtos" class="tabcontent">
+        <section class="produtos">
 
-        <h1>Produtos</h1>
-        <br>
-        <h2>Camisetas</h2>
+            <h1>Produtos</h1>
+            <br>
+            <h2>Camisetas</h2>
 
-        <ul>
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta1.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta Masc.1</h1>
-                    <p class="preco">R$90.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+            <ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta1.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Masc.1</h1>
+                        <p class="preco">R$90.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta2.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta Masc.2</h1>
-                    <p class="preco">R$84.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta2.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Masc.2</h1>
+                        <p class="preco">R$84.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta3.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta Fem.1</h1>
-                    <p class="preco">R$88.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta3.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Fem.1</h1>
+                        <p class="preco">R$88.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta4.png" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta Fem.2</h1>
-                    <p class="preco">R$82.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta4.png" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Fem.2</h1>
+                        <p class="preco">R$82.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta5.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.1</h1>
-                    <p class="preco">R$75.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta5.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.1</h1>
+                        <p class="preco">R$75.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta6.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.2</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta6.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.2</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta7.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.3</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta7.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.3</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta8.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.4</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta8.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.4</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta9.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.5</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta9.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.5</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta10.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.6</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta10.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.6</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/camiseta11.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Camiseta.7</h1>
-                    <p class="preco">R$56.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
-        </ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta11.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.7</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+            </ul>
 
-        <button class="prev" onclick="show(-1)">&lt;</button>
-        <button class="next" onclick="show(+1)">&gt;</button>
+            <button class="prev" onclick="show(-1)">&lt;</button>
+            <button class="next" onclick="show(+1)">&gt;</button>
 
-        <br>
+            <br>
 
-        <h2>Regatas</h2>
+            <h2>Regatas</h2>
 
-        <ul>
-            <li>
-                <div class="carta">
-                    <img src="./Sources/regata1.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Regata.1</h1>
-                    <p class="preco">R$100.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+            <ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/regata1.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Regata.1</h1>
+                        <p class="preco">R$100.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/regata2.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Regata.2</h1>
-                    <p class="preco">R$100.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
-        </ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/regata2.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Regata.2</h1>
+                        <p class="preco">R$100.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+            </ul>
 
-        <br>
+            <br>
 
-        <h2>Bermudas</h2>
+            <h2>Bermudas</h2>
 
-        <ul>
-            <li>
-                <div class="carta">
-                    <img src="./Sources/bermuda1.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Bermuda.1</h1>
-                    <p class="preco">R$100.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
+            <ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/bermuda1.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Bermuda.1</h1>
+                        <p class="preco">R$100.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="carta">
-                    <img src="./Sources/bermuda2.jpg" alt="Camiseta" style="width: 100%;">
-                    <h1>Bermuda.2</h1>
-                    <p class="preco">R$100.00</p>
-                    <p><button><a href="#">Entrar em contato</a></button></p>
-                </div>
-            </li>
-        </ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/bermuda2.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Bermuda.2</h1>
+                        <p class="preco">R$100.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+            </ul>
 
-    </section>
+        </section>
+    </div>
 
-    <section class="galeria">
-        <h1>Galeria</h1>
+    <div id="Galeria" class="tabcontent">
+        <section class="galeria">
+            <h1>Galeria</h1>
 
-        <div class="imagem-cheia" id="imagemCheiaBox">
-            <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
-            <span onclick="fecharImagemCheia()">X</span>
-        </div>
+            <div class="imagem-cheia" id="imagemCheiaBox">
+                <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+                <span onclick="fecharImagemCheia()">X</span>
+            </div>
 
-        <div class="galeria-img">
-            <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
-            <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
-            <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
-            <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
-        </div>
-    </section>
+            <div class="galeria-img">
+                <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+            </div>
+        </section>
+    </div>
 
     <script src="./script.js"></script>
 </body>
