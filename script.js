@@ -90,7 +90,6 @@ function abrirAba(evt, nomeDaAba) {
     }
 
     document.getElementById(nomeDaAba).style.display = "block"
-    evt.currentTarget.className += " ativo"
 }
 document.getElementById("defaultOpen").click()
 

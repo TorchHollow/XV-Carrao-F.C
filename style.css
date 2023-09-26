@@ -47,11 +47,15 @@ body {
 }
 
 .titulo button {
-    background-color: var(--Cor-Secundária);
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 17px;
+    padding: 20px;
     text-decoration: none;
     font-size: 27px;
     border: none;
@@ -385,7 +389,7 @@ button.next {
     top: 50%;
 }
 
-.outro-botao{
+.outro-botao {
     background-color: var(--Cor-Terciaria);
     color: #f2f2f2;
     text-align: center;
@@ -395,7 +399,7 @@ button.next {
     cursor: pointer;
 }
 
-.outro-botao:hover{
+.outro-botao:hover {
     background-color: var(--Cor-Principal);
     color: black;
 }
@@ -435,7 +439,7 @@ button.next {
     box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
 }
 
-.galeria button{
+.galeria button {
     background-color: var(--Cor-Principal);
     color: #f2f2f2;
     text-align: center;
@@ -446,7 +450,7 @@ button.next {
     float: right;
 }
 
-.galeria button:hover{
+.galeria button:hover {
     background-color: var(--Cor-Terciaria);
     color: black;
 }
