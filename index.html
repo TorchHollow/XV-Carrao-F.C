@@ -70,6 +70,115 @@
             </div>
         </section>
 
+        <section class="jogos">
+            <h1>Futuro jogos</h1>
+
+            <img src="./Sources/jogo5.jpg">
+
+            <p id="timer"></p>
+
+            <button class="tablinks" onclick="abrirAba(event, 'Jogos')">Ver jogos passados</button>
+
+        </section>
+
+        <section class="produtos">
+
+            <h1>Produtos</h1>
+            <br>
+            <h2>Camisetas</h2>
+            <br>
+
+            <ul>
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta1.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Masc.1</h1>
+                        <p class="preco">R$90.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta2.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Masc.2</h1>
+                        <p class="preco">R$84.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta3.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Fem.1</h1>
+                        <p class="preco">R$88.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta4.png" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta Fem.2</h1>
+                        <p class="preco">R$82.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta5.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.1</h1>
+                        <p class="preco">R$75.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta6.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.2</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="carta">
+                        <img src="./Sources/camiseta7.jpg" alt="Camiseta" style="width: 100%;">
+                        <h1>Camiseta.3</h1>
+                        <p class="preco">R$56.00</p>
+                        <p><button><a href="#">Entrar em contato</a></button></p>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="prev" onclick="show(-1)">&lt;</button>
+            <button class="next" onclick="show(+1)">&gt;</button>
+
+            <button class="tablinks outro-botao" onclick="abrirAba(event, 'Produtos')">Ver outros produtos</button>
+
+        </section>
+
+        <section class="galeria">
+            <h1>Galeria</h1>
+
+            <div class="imagem-cheia" id="imagemCheiaBox">
+                <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+                <span onclick="fecharImagemCheia()">X</span>
+            </div>
+
+            <div class="galeria-img">
+                <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+            </div>
+
+            <button class="tablinks" onclick="abrirAba(event, 'Galeria')">Ver mais imagens</button>
+
+        </section>
+
     </div>
 
     <!--História do time-->
