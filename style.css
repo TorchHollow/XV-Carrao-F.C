@@ -359,6 +359,10 @@ body {
     text-align: center;
 }
 
+.carta img{
+    width: 300px;
+}
+
 .carta a {
     text-decoration: none;
     color: white;
@@ -428,6 +432,14 @@ button.next {
 .outro-botao:hover {
     background-color: var(--Cor-Principal);
     color: black;
+}
+
+/*Mobile da área de produtos*/
+
+@media screen and (max-width: 1000px) {
+    .carta img{
+        width: 150px;
+    }
 }
 
 /*Área da galeria*/
