@@ -22,7 +22,7 @@ body {
     background-color: var(--Cor-Principal);
 }
 
-.redes{
+.redes {
     width: 100%;
     height: auto;
     background-color: var(--Cor-Terciaria);
@@ -30,7 +30,7 @@ body {
     text-align: center;
 }
 
-.redes-sociais a{
+.redes-sociais a {
     text-decoration: none;
     color: #fff;
 }
@@ -199,7 +199,7 @@ body {
     height: auto;
     position: relative;
     background-color: var(--Cor-Principal);
-    box-shadow: 0px 10px 5px;
+    box-shadow: 0px 5px 5px var(--Cor-Terciaria);
 }
 
 .historia h1 {
@@ -243,6 +243,18 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.escudos {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.escudos img{
+    width: 40%;
 }
 
 
@@ -326,7 +338,6 @@ body {
     height: auto;
     position: relative;
     background-color: var(--Cor-Terciaria);
-    box-shadow: 0px 10px 5px;
 }
 
 .produtos h1 {
@@ -359,7 +370,7 @@ body {
     text-align: center;
 }
 
-.carta img{
+.carta img {
     width: 300px;
 }
 
@@ -437,7 +448,7 @@ button.next {
 /*Mobile da área de produtos*/
 
 @media screen and (max-width: 1000px) {
-    .carta img{
+    .carta img {
         width: 150px;
     }
 }
