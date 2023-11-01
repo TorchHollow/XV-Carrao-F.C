@@ -253,7 +253,7 @@ body {
     justify-content: center;
 }
 
-.escudos img{
+.escudos img {
     width: 40%;
 }
 
@@ -351,99 +351,30 @@ body {
     font-size: 20px;
 }
 
-.produtos ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.slider-wrapper {
+    margin: 1rem;
+    position: relative;
     overflow: hidden;
 }
 
-.produtos li {
-    display: block;
-    list-style: none;
-}
-
-.carta {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-}
-
-.carta img {
-    width: 300px;
-}
-
-.carta a {
-    text-decoration: none;
-    color: white;
-}
-
-.carta h1 {
-    text-align: unset;
-    font-size: unset;
-}
-
-.preco {
-    color: gray;
-    font-size: 22px;
-}
-
-.carta button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+.slides-container {
+    height: calc(100vh - 2rem);
     width: 100%;
-    font-size: 18px;
-}
-
-.carta button:hover {
-    opacity: 0.7;
-}
-
-button.prev,
-button.next {
     display: flex;
-    font-size: 32px;
-    align-items: center;
-    justify-content: center;
-    color: #FFF;
-    background-color: #333;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-button.prev {
-    position: absolute;
-    left: 0;
-    top: 50%;
+.slides-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
-button.next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-
-.outro-botao {
-    background-color: var(--Cor-Terciaria);
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
-
-.outro-botao:hover {
-    background-color: var(--Cor-Principal);
-    color: black;
-}
 
 /*Mobile da área de produtos*/
 
