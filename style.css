@@ -381,12 +381,12 @@ body {
     flex: 1 0 100%;
 }
 
-.slide img{
+.slide img {
     width: 50%;
     height: 100%;
 }
 
-.slide-arrow{
+.slide-arrow {
     position: absolute;
     display: flex;
     top: 0;
@@ -426,6 +426,48 @@ body {
 @media screen and (max-width: 1000px) {
     .carta img {
         width: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide img {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .slide img {
+        width: 90%;
+        height: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slide img {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .slide img {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .slide img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .slide img {
+        width: 50%;
+        height: 100%;
     }
 }
 
