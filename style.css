@@ -464,7 +464,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1500px) {
     .slide img {
         width: 50%;
         height: 100%;
@@ -551,20 +551,71 @@ body {
 
 /*Rodape*/
 
-footer{
-    padding: 0;
+footer {
     margin: 0;
-    display: flex;
-    align-items: flex-end;
-    background-color: var(--Cor-Terciaria);
-    color: #fff;
-    bottom: 0;
-    width: 100%;
-    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #cfd2d6;
+	bottom: 0;
+	background: black;
+	height: auto;
+	width: 100%;
+	padding: 40px 0 0 0;
 }
 
-footer *{
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: dodgerblue;
+}
+
+.footer-copyright{
+    background: var(--Cor-Secundária);
+    width: 100%;
+    padding: 20px 20px 50px 20px;
+}
+
+.footer-copyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+    align-items: center;
+    justify-content: center;
 }
