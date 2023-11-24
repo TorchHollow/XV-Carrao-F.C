@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Sources/logo 2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c2b9d3bae2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="..">
+    <title>XV CARRAO FC</title>
+</head>
+
+<body>
+
+    <section class="redes">
+        <div class="redes-sociais">
+            <p>Corre com nós ou corre de nós</p>
+        </div>
+    </section>
+
+    <!--MenuBar-->
+
+    <div class="titulo" id="meuTitulo">
+        <a href=""><img src="./Sources/logo 2.png">
+            <p>Salve azul ⚫️🔵</p>
+        </a>
+        <button class="tablinks primeiro-botao" id="defaultOpen" onclick="abrirAba(event, 'Home')">Home</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Historia')">História</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Jogos')">Jogos</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Produtos')">Produtos</button>
+        <button class="tablinks" onclick="abrirAba(event, 'Galeria')">Galeria</button>
+        <a href="javascript:void(0);" class="icon" onclick="descerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--Home-->
+
+    <div id="Home" class="tabcontent">
+        <!--Slideshow-->
+
+        <section class="sec-slide">
+            <div class="container-do-slideshow">
+
+                <div class="meuSlide fade">
+                    <img src="./Sources/fotoDoTime.jpg" width="100%">
+                </div>
+
+                <div class="meuSlide fade">
+                    <img src="./Sources/fotoDoTime2.jpg" width="100%">
+                </div>
+
+                <div class="meuSlide fade">
+                    <img src="./Sources/fotoDoTime3.jpg" width="100%">
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="historia">
+            <h1>História</h1>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./Sources/fotoDoTime4.jpg" alt="">
+                </div>
+                <div class="column">
+                    <p>O XV CARRÃO FC, é um time da várzea paulistana, que fica localizado no bairro de Vila Carrão,
+                        Zona Leste de São Paulo.
+                        O XV foi fundado em 12/10/1988, como se fosse um bairro, apelidando a quebrada de XV, porém
+                        nunca houve um time oficial do XV, na época de moleque, Renato, Jairo e companhia disputava
+                        torneios da igreja Universal, <button class="tablinks" onclick="abrirAba(event, 'Historia')">Ver
+                            mais</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="jogos">
+            <h1>Futuro jogos</h1>
+
+            <img src="./Sources/jogo6.jpg">
+
+            <p id="timer"></p>
+
+            <button class="tablinks" onclick="abrirAba(event, 'Jogos')">Ver jogos passados</button>
+
+        </section>
+
+        <section class="produtos">
+
+            <h1>Produtos</h1>
+            <br>
+            <h2>Camisetas</h2>
+
+            <div class="galeria-img">
+                <a href=""><img src="./Sources/camiseta1.jpg"></a>
+                <a href=""><img src="./Sources/camiseta2.jpg"></a>
+                <a href=""><img src="./Sources/camiseta3.jpg"></a>
+                <a href=""><img src="./Sources/camiseta4.png"></a>
+                <a href=""><img src="./Sources/camiseta5.jpg"></a>
+                <a href=""><img src="./Sources/camiseta6.jpg"></a>
+                <a href=""><img src="./Sources/camiseta7.jpg"></a>
+                <a href=""><img src="./Sources/camiseta8.jpg"></a>
+                <a href=""><img src="./Sources/camiseta9.jpg"></a>
+                <a href=""><img src="./Sources/camiseta10.jpg"></a>
+                <a href=""><img src="./Sources/camiseta11.jpg"></a>
+            </div>
+
+        </section>
+
+        <section class="galeria">
+            <h1>Galeria</h1>
+
+            <div class="imagem-cheia" id="imagemCheiaBox">
+                <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+                <span onclick="fecharImagemCheia()">X</span>
+            </div>
+
+            <div class="galeria-img">
+                <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+                <button class="tablinks" onclick="abrirAba(event, 'Galeria')">Ver mais imagens</button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!--História do time-->
+
+    <div id="Historia" class="tabcontent">
+
+        <section class="historia">
+            <h1>História</h1>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./Sources/fotoDoTime4.jpg" alt="">
+                </div>
+                <div class="column">
+                    <p>O nome XV, foi fundado em 12/10/1988, no bairro de Vila Carrão, pela rapaziada da época, e ao
+                        passar dos anos, as novas gerações, jogavam bola e já levava o nome XV do Carrão.
+                        Em 2023, o Renato Reis, conseguiu da andamento nesse projeto, de montar um time de futsal de
+                        varzea, que sempre foi o sonho dele, e aos poucos o time XV CARRÃO F.C vem crescendo e se
+                        destacando, nossa torcida, que vem fazendo a diferença a cada jogo, que confiou e nos apoia em
+                        cada jogo. </p>
+                </div>
+            </div>
+
+            <h1>Escudos do time que já fizemos até agora</h1>
+
+            <div class="escudos">
+                <img src="./Sources/escudo1.jfif">
+                <img src="./Sources/escudo2.jfif">
+                <img src="./Sources/escudo3.jfif">
+                <img src="./Sources/escudo4.jfif">
+            </div>
+        </section>
+
+    </div>
+
+    <!--Jogos futuros-->
+
+    <div id="Jogos" class="tabcontent">
+        <section class="jogos">
+            <h1>Futuro jogos</h1>
+
+            <img src="./Sources/jogo5.jpg">
+
+            <p id="timer"></p>
+
+            <br>
+
+            <h1>Jogos passados</h1>
+
+            <div class="escudos">
+                <img src="./Sources/jogo5.jpg">
+                <img src="./Sources/jogo4.jpg">
+                <img src="./Sources/jogo3.jpg">
+                <img src="./Sources/jogo2.jpg">
+                <img src="./Sources/jogo1.jpg">
+            </div>
+
+        </section>
+
+    
+    </div>
+    <!--Produtos do time-->
+
+    <div id="Produtos" class="tabcontent">
+        <section class="produtos">
+
+            <h1>Produtos</h1>
+            <br>
+            <h2>Camisetas</h2>
+
+            <div class="galeria-img">
+                <a href=""><img src="./Sources/camiseta1.jpg"></a>
+                <a href=""><img src="./Sources/camiseta2.jpg"></a>
+                <a href=""><img src="./Sources/camiseta3.jpg"></a>
+                <a href=""><img src="./Sources/camiseta4.png"></a>
+                <a href=""><img src="./Sources/camiseta5.jpg"></a>
+                <a href=""><img src="./Sources/camiseta6.jpg"></a>
+                <a href=""><img src="./Sources/camiseta7.jpg"></a>
+                <a href=""><img src="./Sources/camiseta8.jpg"></a>
+                <a href=""><img src="./Sources/camiseta9.jpg"></a>
+                <a href=""><img src="./Sources/camiseta10.jpg"></a>
+                <a href=""><img src="./Sources/camiseta11.jpg"></a>
+            </div>
+
+            <br>
+            <h2>Bermudas</h2>
+
+            <div class="galeria-img">
+                <a href=""><img src="./Sources/bermuda1.jpg"></a>
+                <a href=""><img src="./Sources/bermuda2.jpg"></a>
+            </div>
+
+            <br>
+            <h2>Regatas</h2>
+
+            <div class="galeria-img">
+                <a href=""><img src="./Sources/regata1.jpg"></a>
+                <a href=""><img src="./Sources/regata2.jpg"></a>
+            </div>
+
+        </section>
+    </div>
+
+    <!--Área da galeria-->
+
+    <div id="Galeria" class="tabcontent">
+        <section class="galeria">
+            <h1>Galeria</h1>
+
+            <div class="imagem-cheia" id="imagemCheiaBox">
+                <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+                <span onclick="fecharImagemCheia()">X</span>
+            </div>
+
+            <div class="galeria-img">
+                <img src="./Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+                <img src="./Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+            </div>
+        </section>
+    </div>
+
+    <!--Rodapé-->
+
+    <footer>
+        <div class="footer">
+            <p>Redes sociais</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/xv_do_carrao/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p>copyright &copy;2023 </p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
