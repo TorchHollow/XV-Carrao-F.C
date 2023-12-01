@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Sources/logo 2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Sources/logo 2.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c2b9d3bae2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./style.css">
     <title>XV CARRAO FC</title>
 </head>
@@ -29,39 +30,34 @@
         <button class="tablinks"><a href="../Jogos/index.html">Jogos</a></button>
         <button class="tablinks"><a href="../Produtos/index.html">Produtos</a></button>
         <button class="tablinks"><a href="../Galeria/index.html">Galeria</a></button>
-                <a href="javascript:void(0);" class="icon" onclick="descerMenu()">
+        <a href="javascript:void(0);" class="icon" onclick="descerMenu()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
-    <!--História do time-->
+    <!--Área da galeria-->
 
-        <section class="historia">
-            <h1>História</h1>
 
-            <div class="row">
-                <div class="column">
-                    <img src="../Sources/fotoDoTime4.jpg" alt="">
-                </div>
-                <div class="column">
-                    <p>O nome XV, foi fundado em 12/10/1988, no bairro de Vila Carrão, pela rapaziada da época, e ao
-                        passar dos anos, as novas gerações, jogavam bola e já levava o nome XV do Carrão.
-                        Em 2023, o Renato Reis, conseguiu da andamento nesse projeto, de montar um time de futsal de
-                        varzea, que sempre foi o sonho dele, e aos poucos o time XV CARRÃO F.C vem crescendo e se
-                        destacando, nossa torcida, que vem fazendo a diferença a cada jogo, que confiou e nos apoia em
-                        cada jogo. </p>
-                </div>
-            </div>
+    <section class="galeria">
+        <h1>Galeria</h1>
 
-            <h1>Escudos do time que já fizemos até agora</h1>
+        <div class="imagem-cheia" id="imagemCheiaBox">
+            <img src="./Sources/fotoDoTime.jpg" id="imagemCheia">
+            <span onclick="fecharImagemCheia()">X</span>
+        </div>
 
-            <div class="escudos">
-                <img src="../Sources/escudo1.jfif">
-                <img src="../Sources/escudo2.jfif">
-                <img src="../Sources/escudo3.jfif">
-                <img src="../Sources/escudo4.jfif">
-            </div>
-        </section>
+        <div class="galeria-img">
+            <img src="../Sources/fotoDoTime.jpg" height="90%" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime2.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime3.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime4.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime5.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime6.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime7.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime8.jpg" onclick="abrirImagemCheia(this.src)">
+            <img src="../Sources/fotoDoTime9.jpg" onclick="abrirImagemCheia(this.src)">
+        </div>
+    </section>
 
     <!--Rodapé-->
 
@@ -76,7 +72,7 @@
             </div>
         </div>
     </footer>
-    
+
 
     <script src="./script.js"></script>
 </body>
