@@ -60,7 +60,7 @@ body {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 17px;
+    padding: 10px;
     text-decoration: none;
     font-size: 27px;
 }
@@ -208,6 +208,12 @@ body {
     padding: 20px 0;
 }
 
+.historia a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
 .column {
     float: left;
     width: 50%;
@@ -308,17 +314,18 @@ body {
     margin-top: 0px;
 }
 
-.jogos button {
+.jogos a {
     background-color: var(--Cor-Secundária);
     color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 25px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.jogos button:hover {
+.jogos a:hover {
     background-color: var(--Cor-Terciaria);
     color: black;
 }
@@ -351,6 +358,11 @@ body {
     font-size: 20px;
 }
 
+.produtos a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .produtos .galeria-img img {
     width: 100%;
     cursor: pointer;
@@ -362,6 +374,18 @@ body {
     border-radius: unset;
     box-shadow: none;
 }
+
+.produtos .galeria-img button{
+    background-color: var(--Cor-Terciaria);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
 
 
 
@@ -400,6 +424,11 @@ body {
     box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
 }
 
+.galeria-img a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .galeria button {
     background-color: var(--Cor-Principal);
     color: #f2f2f2;
@@ -409,11 +438,6 @@ body {
     border: none;
     cursor: pointer;
     float: right;
-}
-
-.galeria button:hover {
-    background-color: var(--Cor-Terciaria);
-    color: black;
 }
 
 .imagem-cheia {
